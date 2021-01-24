@@ -1,0 +1,43 @@
+@import "blocks/base.css";
+@import "blocks/buttons.css";
+
+@import "blocks/nav.css";
+@import "blocks/header.css";
+@import "blocks/section-header.css";
+@import "blocks/product.css";
+@import "blocks/info-section.css";
+@import "blocks/post.css";
+@import "blocks/subscribe-form.css";
+@import "blocks/footer.css";
+@import "blocks/menu-icon.css";
+
+
+/*.nav,*/
+/*header,*/
+/*.featured,*/
+/*.info-section,*/
+/*.section-new,*/
+/*.section-blog,*/
+/*.section-subscribe*/
+/*!*footer *!*/
+/*{*/
+/*    display: none;*/
+/*}*/
+
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+.bygimen01 {
+    text-decoration: none;
+}
+
+.bygimen01:hover{
+    text-decoration: underline;
+    color: #e2e2e2;
+}
+
+.none {
+    display: none;
+}

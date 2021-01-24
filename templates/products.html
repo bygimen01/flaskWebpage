@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Products
+{% endblock %}
+
+{% block content %}
+<section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-header__title">New products</h2>
+                <div class="section-header__description section-header__description--uppercase">
+                    <p>dolor sit amet</p>
+                </div>
+            </div>
+
+            <div class="products-wrapper">
+                <!--Product-->
+                <a href="#" class="product-link page_products">
+                    <div class="product">
+                        <img src="{{ url_for('static', filename= 'css/img/products/product.jpg') }}" alt="Product photo" class="product__img">
+                        <h4 class="product__title">Cotton Skirt</h4>
+                        <div class="product__price">
+                            <span class="product__price-old">$100.00</span>
+                            <span class="product__price-new ">$95.00</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- // product -->
+                <!--Product-->
+                <a href="#" class="product-link page_products">
+                    <div class="product">
+                        <img src="{{ url_for('static', filename= 'css/img/products/product.jpg') }}" alt="Product photo" class="product__img">
+                        <h4 class="product__title">Cotton Skirt</h4>
+                        <div class="product__price">
+                            <span class="product__price-old">$100.00</span>
+                            <span class="product__price-new ">$95.00</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- // product -->
+                <!--Product-->
+                <a href="#" class="product-link page_products">
+                    <div class="product">
+                        <img src="{{ url_for('static', filename= 'css/img/products/product.jpg') }}" alt="Product photo" class="product__img">
+                        <h4 class="product__title">Cotton Skirt</h4>
+                        <div class="product__price">
+                            <span class="product__price-old">$100.00</span>
+                            <span class="product__price-new ">$95.00</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- // product -->
+                <!--Product-->
+                <a href="#" class="product-link page_products">
+                    <div class="product">
+                        <img src="{{ url_for('static', filename= 'css/img/products/product.jpg') }}" alt="Product photo" class="product__img">
+                        <h4 class="product__title">Cotton Skirt</h4>
+                        <div class="product__price">
+                            <span class="product__price-old">$100.00</span>
+                            <span class="product__price-new ">$95.00</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- // product -->
+                <!--Product-->
+                <a href="#" class="product-link page_products none">
+                    <div class="product">
+                        <img src="{{ url_for('static', filename= 'css/img/products/product.jpg') }}" alt="Product photo" class="product__img">
+                        <h4 class="product__title">Cotton Skirt</h4>
+                        <div class="product__price">
+                            <span class="product__price-old">$100.00</span>
+                            <span class="product__price-new ">$95.00</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- // product -->
+                <!--Product-->
+                <a href="#" class="product-link page_products none">
+                    <div class="product">
+                        <img src="{{ url_for('static', filename= 'css/img/products/product.jpg') }}" alt="Product photo" class="product__img">
+                        <h4 class="product__title">Cotton Skirt</h4>
+                        <div class="product__price">
+                            <span class="product__price-old">$100.00</span>
+                            <span class="product__price-new ">$95.00</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- // product -->
+                <!--Product-->
+                <a href="#" class="product-link page_products none">
+                    <div class="product">
+                        <img src="{{ url_for('static', filename= 'css/img/products/product.jpg') }}" alt="Product photo" class="product__img">
+                        <h4 class="product__title">Cotton Skirt</h4>
+                        <div class="product__price">
+                            <span class="product__price-old">$100.00</span>
+                            <span class="product__price-new ">$95.00</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- // product -->
+                <!--Product-->
+                <a href="#" class="product-link page_products none">
+                    <div class="product">
+                        <img src="{{ url_for('static', filename= 'css/img/products/product.jpg') }}" alt="Product photo" class="product__img">
+                        <h4 class="product__title">Cotton Skirt</h4>
+                        <div class="product__price">
+                            <span class="product__price-old">$100.00</span>
+                            <span class="product__price-new ">$95.00</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- // product -->
+
+            </div>
+
+            <div class="section-button-wrapper" id="showMoreItems">
+                <a class="button-outline" onclick="showMoreProducts()">
+                    Browse all items
+                </a>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

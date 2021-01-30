@@ -9,6 +9,10 @@
     column-gap: 30px;
 }
 
+.product_page{
+    padding-top: 0;
+    margin-top: 80px;
+}
 
 .product-link{
     text-decoration: none;

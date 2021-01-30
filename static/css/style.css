@@ -28,7 +28,9 @@
 font-family: 'Noto Sans', sans-serif;
 font-family: 'Playfair Display', serif;
 */
-
+html{
+    scroll-behavior: smooth;
+}
 .bygimen01 {
     text-decoration: none;
 }
@@ -40,4 +42,23 @@ font-family: 'Playfair Display', serif;
 
 .none {
     display: none;
+}
+
+@media (max-width: 992px) {
+    body {
+        padding: 120px 0;
+    }
+}
+
+/*Animation*/
+
+.anim_item {
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+._active {
+    transform: translate(0px,0px);
+    opacity: 1;
 }

@@ -1,11 +1,16 @@
 /*Navigation*/
 .nav {
     padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
 }
 
 @media (min-width: 992px) {
     .nav {
-        padding: 40px 0;
+        padding: 20px 0;
     }
 }
 
@@ -39,8 +44,7 @@ a.nav__logo:hover {
 }
 
 .nav__list-holder {
-    display: none;
-    /*opacity: 0;*/
+    display: block;
     transition: opacity 0.2s ease-in;
     position: absolute;
     top: 0;
@@ -48,13 +52,11 @@ a.nav__logo:hover {
     width: 100%;
     height: 100%;
     color: white;
-    background-color: rgba(247, 36, 99, 0.3);
     z-index: 9;
 }
 
 .nav__list-holder--visible{
-    display: block;
-    /*opacity: 1;*/
+    display: none;
 }
 
 @media (min-width: 992px) {
@@ -77,12 +79,16 @@ a.nav__logo:hover {
     padding: 0;
     color: #ffffff;
     z-index: 9;
-    transform: translateX(-100%);
     transition: transform 0.2s ease-in;
 }
 
 .nav__list-holder--visible .nav__list {
     transform: translateX(0%);
+}
+@media (min-width: 992px){
+    .nav__list-holder--visible {
+    display: block;
+}
 }
 
 @media (min-width: 992px) {

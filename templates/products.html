@@ -5,7 +5,56 @@ Products
 {% endblock %}
 
 {% block content %}
-<section class="featured">
+
+    <nav class="nav">
+    <div class="container">
+        <div class="nav__row">
+            <a href="/" class="nav__logo">
+                Elegance
+            </a>
+
+            <div class="nav__list-holder nav__list-holder--visible">
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="products" class="nav__link">Collection</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Men</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Women</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/#blog" class="nav__link">Blog</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="nav__cart">
+                <a href="#" class="nav__cart-link">
+                    <span class="nav__cart-number">
+                        3
+                    </span>
+                <img src="{{ url_for('static', filename = 'css/img/icons/shopping-cart.svg') }}" alt="Cart">
+                </a>
+            </div>
+
+            <div class="menu-icon-wrapper">
+                <div class="menu-icon"></div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+<section class="featured product_page ">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-header__title">New products</h2>

@@ -4,21 +4,32 @@ document.querySelector('.menu-icon-wrapper').onclick = function(){
 };
 
 
-//SHOW MORE PRODUCTS BUTTON
+const anim = document.querySelectorAll('.animation_product');
+if (anim.length > 0) {
+    window.addEventListener('scroll', animScroll);
+    function animScroll(params) {
+        for (let index = 0; index <anim.length; index++) {
+             const animItem = anim[index];
+             const animItemHeight = animItem.offsetHeight;
+             const animItemOffset = offset(animItem).top;
+             const animStart = 4;
 
-mybutton = document.getElementById("myBtn");
+             let animItemPoint = window.innerHeight - animItemHeight/animStart;
 
-function showMoreProducts() {
-    //Scrolling down
-    document.body.scrollTop +=  100; // For Safari
-    document.documentElement.scrollTop += 100; // For Chrome, Firefox, IE and Opera
+             if (animItemHeight > window.innerHeight){
+                 animItemPoint = window.innerHeight - window.innerHeight / animStart
+             }
 
-    let btn = document.getElementById('showMoreItems');
+             if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
+                 animItem.classList.add('_active');
+             }
+         }
+    }
+    function offset(el) {
+         const rect = el.getBoundingClientRect(),
+             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+         return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
 
-    let forEach = Array.prototype.forEach;
-    let className = "products";
-
-    forEach.call(document.querySelectorAll("." + className), function(node) {
-        node.classList.remove('.none');
-    });
+     }
 }
